@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+
+<head>
+    <!--Information-->
+    <title>RegalisCraft.pl</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Mean">
+    <meta charset="utf-8">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="shortcut icon" href="Img/pumpkin.png" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bevan|Black+Ops+One|Bungee" rel="stylesheet">
+    <!--Bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+    <!--Java Script-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+
+
+    <script>
+        jQuery(function($) {
+            //zresetuj scrolla
+            $.scrollTo(0);
+
+            $('#link-one').click(function() {
+                $.scrollTo($('#pumpkin'), 1000);
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.scrollToTop').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+        });
+
+    </script>
+   
+</head>
+
+<body>
+    <main>
+        <a href="#" class="scrollToTop"></a>
+        <article>
+            <div class="wrapper">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+                            <a class="navbar-brand text-uppercase" href="Index.html"><span style="font-family: 'Fontdiner Swanky', cursive;">REGALISCRAFT.PL</span></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navigation">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="Index.html">Strona główna</a></li>
+                                <li><a href="sklep.html">Sklep</a></li>
+                                <li><a href="Support.html">Support</a></li>
+                                <li><a href="Gallery.html">Galeria</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <row>
+            </row>
+            <div class="col-lg-12" id="footer">
+                <div class="col-lg-12" id="shadow">
+                    <h1 style="padding-top:15px;">Dołącz do nas już dziś!</h1>
+                </div>
+            </div>
+            <div class="col-lg-12" id="page-info">&copy;RegalisCraft.pl 2018. All Rights Reserved. |<a href="Polityka-ciasteczek.html"target="_blank">Polityka ciasteczek</a>|</div>
+        </article>
+    </main>
+    <section id="cookie-warn">
+        <div class="col-md-1"><img src="Img/pumpkin-icon.png" style="width:60px;height:60px;margin-bottom:10px;"></div>
+        <div class="col-md-10" style="font-family: 'Rakkas', cursive;">
+            <p><strong>UWAGA!</strong> Niniejsza strona wykorzystuje pliki cookies. Informacje uzyskane za pomocą cookies wykorzystywane są głównie w celach statystycznych. Pozostając na stronie godzisz się na ich zapisywanie w Twojej przeglądarce.</p>
+        </div>
+        <div class="col-md-1"><a href="javascript:void(0);" id="close-cookie-warn" style="border: 2px #E6992E solid;border-radius:12px;padding:5px;display:block;">Zamknij ostrzeżenie</a></div>
+    </section>
+
+</body>
+
+</html>
